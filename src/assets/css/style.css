@@ -1,0 +1,60 @@
+@layer base {
+    html {
+        font-family: 'Raleway', sans-serif !important;
+    }
+    body{
+        background: #121212;
+    }
+}
+
+.page-content {
+    @apply grid grid-rows-1 items-center justify-center px-14 lg:px-24 xl:px-60;
+}
+
+header, main {
+    @apply h-screen;
+}
+
+.header-bg {
+    @apply h-3/4 w-full bg-cover bg-center absolute blur-xl mix-blend-overlay bg-header-background;
+}
+
+.text {
+    @apply text-theme-withe;
+}
+
+.title {
+   @apply text-center md:text-6xl md:px-8 lg:text-7xl text-5xl lg:px-16 xl:px-36 2xl:px-52 2xl:text-8xl ;
+}
+
+.sub-title {
+    @apply font-bold text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl xl:pb-6 pb-3 pt-10;
+}
+
+.description {
+    @apply text-xl md:text-2xl lg:text-3xl 2xl:text-4xl;
+}
+
+.page-container {
+    @apply flex items-center justify-center;
+}
+
+.main-gradient {
+    @apply font-bold text-transparent bg-clip-text bg-gradient-to-tr from-theme-main to-theme-light;
+}
+
+.project-box{
+   @apply bg-gray-600 max-w-screen-md xl:max-w-screen-lg bg-opacity-10 hover:bg-opacity-20 transition-all rounded-md drop-shadow-lg;
+}
+
+.project-title {
+    @apply font-mono text font-bold py-1;
+}
+
+.list-box {
+    @apply grid justify-center xl:grid-cols-2 gap-5;
+}
+
+.link {
+    @apply px-4 h-full py-2;
+}
